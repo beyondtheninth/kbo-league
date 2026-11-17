@@ -1,0 +1,486 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#162b28"><title>BEYOND THE NINTH | CLUB GUIDE</title><style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600;700&family=Cinzel:wght@600;700;800;900&family=DM+Sans:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Do+Hyeon&display=swap');
+:root{--team:#79263a;--ink:#1c2826;--muted:#687672;--bg:#f2f4f0}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans','Noto Sans KR',sans-serif;line-height:1.65}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #dfad4b;outline-offset:3px}.top{background:#152c28;color:#fff;padding:18px max(18px,calc((100vw - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;letter-spacing:.1em;font-size:14px}.top small{font-size:10px;letter-spacing:.16em;color:#b5c8c0}.shell{max-width:1120px;margin:auto;padding:26px 16px 80px}.intro{padding:14px 3px 22px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--team)}h1{font-size:clamp(29px,6vw,52px);letter-spacing:-.06em;line-height:1.2;margin:8px 0 10px}p{margin:0}.intro p{color:var(--muted);font-size:14px}.selector{display:flex;gap:8px;overflow-x:auto;padding:5px 2px 17px;scrollbar-width:thin;position:sticky;top:0;z-index:10;background:var(--bg)}.selector button{white-space:nowrap;background:white;border:1px solid #dce3dc;border-radius:30px;padding:10px 16px;color:#43534e;font-weight:800;font-size:13px}.selector button.active{background:#172c28;color:white;border-color:#172c28}.sheet{background:#fff;border:1px solid #e0e5df;border-radius:22px;overflow:hidden;box-shadow:0 18px 55px #16382d0b}.mast{background:var(--team);color:#fff;padding:30px clamp(20px,5vw,52px);position:relative;overflow:hidden}.mast:after{content:'BASEBALL';position:absolute;right:-5px;bottom:-80px;font-weight:900;font-size:210px;line-height:1;opacity:.06;pointer-events:none}.mast-top{display:flex;justify-content:space-between;gap:12px;font-size:11px;font-weight:800;letter-spacing:.13em;opacity:.9}.mast-grid{display:grid;grid-template-columns:1fr minmax(100px,230px);gap:16px;align-items:center;margin-top:22px}.mast h2{font-size:clamp(32px,6vw,66px);letter-spacing:-.06em;line-height:1.02;margin:6px 0 12px;overflow-wrap:anywhere}.mast .ko{font-size:16px;font-weight:700}.motto{font-size:13px;margin-top:20px;max-width:500px;color:#fff;opacity:.94}.logo{width:100%;max-height:190px;object-fit:contain;filter:drop-shadow(0 6px 8px #0002)}.logo-empty{border:1px dashed #ffffff7a;border-radius:14px;min-height:125px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:12px;color:#fff;font-size:12px}.logo-empty span{font-size:35px}.content{padding:clamp(20px,4vw,46px)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:30px}.stat{background:#f5f6f3;border-radius:12px;padding:17px 9px;text-align:center}.stat b{display:block;color:var(--team);font-size:clamp(22px,4vw,34px);line-height:1.2}.stat span{font-size:11px;color:#65716d;font-weight:700}.section{margin-top:30px}.section-head{display:flex;align-items:center;gap:10px;color:var(--team);font-weight:900;font-size:11px;letter-spacing:.12em;margin-bottom:11px}.section-head:after{content:'';height:1px;flex:1;background:#e4e9e3}.lead{font-size:clamp(19px,3vw,26px);font-weight:900;letter-spacing:-.04em;margin-bottom:9px}.body-copy{color:#4f5d58;font-size:14px;line-height:1.9;white-space:pre-line}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.chip{background:#f1f4ef;color:#47584e;border-radius:100px;padding:5px 12px;font-size:12px;font-weight:700}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.info{width:100%;border-collapse:collapse;font-size:13px}.info tr{border-bottom:1px solid #e9ece8}.info th{text-align:left;width:100px;color:#77817b;font-weight:600;padding:10px 6px 10px 0}.info td{font-weight:700;padding:10px 0}.feature{background:#f5f6f3;border-radius:14px;padding:18px}.feature strong{font-size:15px}.feature p{font-size:13px;color:#53615b;margin-top:6px;white-space:pre-line}.media{display:grid;grid-template-columns:1fr 1fr;gap:12px}.media figure{margin:0;border-radius:14px;overflow:hidden;background:#f3f4f0;border:1px solid #e6eae5}.media img{display:block;width:100%;height:260px;object-fit:contain;padding:12px}.media figcaption{padding:10px 14px;font-size:12px;color:#68736e;font-weight:700;border-top:1px solid #e6eae5}.placeholder{height:230px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:#929b95;font-size:12px;text-align:center;padding:20px}.placeholder span{font-size:34px}.footer{display:flex;justify-content:space-between;gap:10px;padding:18px 25px;background:#f6f7f4;color:#8a948d;font-size:10px;font-weight:800;letter-spacing:.12em}.note{font-size:12px;color:#849087;margin-top:17px}.nav-bottom{display:flex;justify-content:space-between;gap:12px;margin-top:22px}.nav-bottom button{background:#fff;border:1px solid #dce3dc;border-radius:10px;padding:12px 18px;font-weight:800;color:#263c34}@media(max-width:600px){.mast-grid{grid-template-columns:1fr 110px}.mast{padding:24px 20px}.mast h2{font-size:36px}.logo-empty{min-height:100px}.two{grid-template-columns:1fr}.media{grid-template-columns:1fr 1fr}.media img{height:160px}.placeholder{height:160px}.stats{gap:6px}.stat{padding:12px 5px}.stat span{font-size:10px}.content{padding:20px}.top{padding:14px 17px}}
+
+/* Typography refresh: fantasy-inspired club titles, original layout retained */
+.mast h2{font-family:'Cinzel',Georgia,serif;font-weight:900;letter-spacing:-.045em;line-height:1.09;text-wrap:balance;text-shadow:0 2px 1px #00000016}
+.mast .ko{font-family:'IBM Plex Sans KR',sans-serif;font-weight:700;letter-spacing:-.085em;font-size:clamp(19px,3vw,26px);line-height:1.35;display:inline-block;transform:scaleX(.91);transform-origin:left center}
+.brand{font-family:'Cinzel',Georgia,serif;font-weight:900;letter-spacing:.075em}
+.intro h1,.lead{font-family:'IBM Plex Sans KR',sans-serif;font-weight:700;letter-spacing:-.075em}
+.section-head{font-family:'Cinzel','Noto Sans KR',serif;font-weight:900;letter-spacing:.09em;font-size:12px}
+.stat b{font-family:'Cinzel',Georgia,serif;font-weight:900}
+@media(max-width:600px){.mast h2{font-size:clamp(27px,7.4vw,38px)}.brand{font-size:12px;letter-spacing:.035em}}
+
+/* Slogan-only fantasy title treatment; preserve club names and body type. */
+.motto{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.035em;font-size:clamp(14px,2vw,18px);line-height:1.65;text-shadow:0 1px 3px #00000020;}
+@font-face{font-family:'HeirofLightBold';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap;}
+.motto.ko-slogan{font-family:'HeirofLightBold','IBM Plex Sans KR',sans-serif;font-weight:700;letter-spacing:-.015em;font-size:clamp(15px,2.1vw,19px);line-height:1.5;display:inline-block;transform:none;}
+
+/* Wolves artwork only: original images embedded unchanged, no cropping */
+.wolves-main-logo{background:transparent;border-radius:0;padding:0;filter:none;position:relative;z-index:1}
+.wolves-marks img{height:220px;background:#fff}
+.wolves-uniforms{grid-template-columns:1fr}
+.wolves-uniforms img{height:auto;max-height:none;aspect-ratio:auto;padding:0;background:#fff}
+@media(max-width:600px){.wolves-marks img{height:145px}.wolves-uniforms img{height:auto;max-height:none;padding:0}}
+
+/* Soft shadow for pale symbols; original PNGs remain untouched */
+.wolves-marks.marks-monarchs figure:first-child img,.wolves-marks.marks-polaris figure:first-child img{background:transparent;filter:drop-shadow(1px 3px 2px rgba(20,28,35,.55)) drop-shadow(0 0 1px rgba(20,28,35,.38))}
+
+/* Preview: small partner marks in club profile */
+.partners-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.partner-tile{border:1px solid #e5e5e5;border-radius:10px;padding:14px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:9px;background:#fff;min-width:0}
+.partner-kicker{font-size:10px;letter-spacing:1.5px;font-weight:800;color:#777;align-self:flex-start}
+.partner-image{height:78px;width:100%;display:flex;align-items:center;justify-content:center}
+.partner-image img{max-width:100%;max-height:75px;object-fit:contain}
+.partner-name{font-size:12px;font-weight:700;color:#333}
+.partner-download{font-size:11px;color:var(--team);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+@media(max-width:600px){.partners-grid{gap:8px}.partner-tile{padding:10px 8px}.partner-image{height:60px}.partner-image img{max-height:56px}.partner-kicker{font-size:9px;letter-spacing:.5px}}
+
+/* Original-image downloads; visual filters are never baked into the files */
+.asset-download{display:inline-block;border:0;background:none;color:var(--team);font:inherit;font-size:11px;font-weight:700;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:6px 0}
+.mast-download{text-align:right;padding:0 5px 8px}
+.mast-download .asset-download{color:inherit;opacity:.85}
+.wolves-marks figure .asset-download{margin:0 auto 9px;display:block}
+
+/* A single, quiet download center below the image gallery */
+.dc-section{padding-bottom:30px}
+.dc-title{font-size:23px;font-weight:900;letter-spacing:.8px;margin-top:14px}
+.dc-subtitle{font-size:11px;letter-spacing:1px;color:#777;margin:5px 0 18px}
+.dc-list{border:1px solid #e7e7e7;border-radius:8px;overflow:hidden}
+.dc-group{padding:15px 18px;border-bottom:1px solid #ececec}
+.dc-group:last-child{border-bottom:0}
+.dc-group-heading{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;margin-bottom:10px}
+.dc-group-heading strong{font-size:12px;letter-spacing:1px}
+.dc-group-heading span{font-size:11px;color:#777}
+.dc-links{display:flex;gap:8px;flex-wrap:wrap}
+.dc-links button{background:#f7f7f7;border:1px solid #e8e8e8;border-radius:5px;padding:8px 11px;display:flex;gap:16px;align-items:center;justify-content:space-between;cursor:pointer;color:#333;font-size:11px}
+.dc-links button span:last-child{color:var(--team);font-weight:800}
+.dc-all{margin-top:14px;width:100%;border:0;border-radius:6px;background:var(--team);color:white;padding:15px 12px;font-weight:800;letter-spacing:.6px;cursor:pointer}
+.dc-all small{font-size:10px;font-weight:400;opacity:.85;margin-left:9px}
+
+/* Small per-club uniform lettering note, visually separate from images */
+.marking-font{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:14px;padding:12px 14px;background:#f7f7f7;border-radius:6px}
+.marking-font-label{font-size:10px;letter-spacing:1.1px;color:#777;font-weight:700}
+.marking-font strong{font-size:12px;color:#333;font-weight:700;text-align:right}
+/* Template image slots: original PNGs are stored separately */
+.partner-image img{object-fit:contain}
+</style></head><body><header class="top"><div class="brand">BEYOND THE NINTH</div><small>THE OFFICIAL CLUB GUIDE</small></header><main class="shell"><div class="intro"><div class="eyebrow">2026 · FICTIONAL BASEBALL LEAGUE</div><h1>열 개의 구단, 열 개의 이야기.</h1><p>열 개의 구단이 써 내려가는 하나의 리그. 각자의 방식으로 승리를 만들어가는 팀들을 만나보세요.</p></div><nav class="selector" id="selector" aria-label="구단 선택"></nav><article class="sheet" id="sheet" aria-live="polite"></article><div class="nav-bottom"><button id="prev">← 이전 구단</button><button id="next">다음 구단 →</button></div><p class="note">※ 가상의 야구 리그를 배경으로 한 창작 합작 가이드입니다. 천랑 울브스·세연 모나크스·해성 폴라리스의 원본 이미지는 파일에 포함되어 있습니다. 다른 구단 이미지는 추후 추가됩니다.</p></main><script>
+/* ─────────────────────────────────────────────────────────
+  편집 방법
+  1) 아래 CLUBS에서 구단별 문구/수치를 바꿔 주세요.
+  2) 이미지는 images 폴더에 원본 파일을 넣고 경로를 수정하세요.
+     예: logo:'images/wolves-logo.png', uniform:'images/wolves-uniform.png'
+  3) 키트 스폰서가 미정인 구단은 정보표에서 해당 행을 숨깁니다.
+  4) 기존 로고/유니폼은 변형하지 않으며 object-fit:contain으로 표시됩니다.
+───────────────────────────────────────────────────────── */
+const CLUBS=[
+  {
+    "id": "wolves",
+    "companyLogo": "images/wolves/companyLogo.png",
+    "sponsorLogo": "images/wolves/sponsorLogo.png",
+    "ko": "서울 CR 울브스",
+    "en": "CR WOLVES",
+    "city": "SEOUL",
+    "color": "#79263a",
+    "icon": "🐺",
+    "year": "1982",
+    "home": "서울 관악 울브스 필드",
+    "parent": "천랑",
+    "sponsor": "다이나핏",
+    "titles": "8회",
+    "pennants": "7회",
+    "postseason": "19회",
+    "motto": "Equal Chance. Fair Game. Fearless Fight.",
+    "identity": "공정한 승부와 원칙을 중시하는 서울의 전통 명문 구단. 이름이나 경력보다 실력과 노력을 평가하며, 늑대처럼 굳건한 결속력으로 함께 승리를 만들어간다.",
+    "play": "선발투수와 탄탄한 수비를 중심으로 기본기에 충실한 야구를 펼친다. 실책이 적고 작전 수행 능력이 뛰어나며, 특히 1~2점 차의 팽팽한 승부에서 강하다.",
+    "tags": [
+      "선발 중심",
+      "철벽 수비",
+      "기본기",
+      "접전의 강자"
+    ],
+    "clubimage": "리그를 대표하는 정통파 명문. 화려함보다는 안정성과 조직력을 중시하며, 울브스에서 뛰었다는 사실 자체가 선수의 경력으로 인정받는다.",
+    "fandom": "오랜 역사만큼 충성도 높은 팬층을 보유하고 있다. 프랜차이즈 스타에 대한 애착이 강하며, 팀을 향한 헌신과 의리를 중요하게 여긴다.",
+    "logo": "images/wolves/logo.png",
+    "symbol": "images/wolves/symbol.png",
+    "wordmark": "images/wolves/wordmark.png",
+    "uniform": "images/wolves/uniform.png",
+    "details": "images/wolves/details.png",
+    "markingFont": "KBL 점프체"
+  },
+  {
+    "id": "monarchs",
+    "ko": "서울 세연 모나크스",
+    "en": "SEYEON MONARCHS",
+    "city": "SEOUL",
+    "color": "#84a53b",
+    "icon": "🦋",
+    "year": "1990",
+    "home": "서울 동작 모나크스 파크",
+    "parent": "세연",
+    "sponsor": "아디다스",
+    "titles": "3회",
+    "pennants": "4회",
+    "postseason": "14회",
+    "motto": "함께라서, 더 멀리.",
+    "identity": "한 명의 스타보다 아홉 명의 연결을 믿는 팀. 선수 간의 신뢰와 협력을 중시하며, 나비처럼 끊임없이 변화하고 성장하는 야구를 추구한다.",
+    "play": "뛰어난 타격 기술과 적극적인 주루를 바탕으로 득점을 만들어낸다. 젊은 선수 육성에 강하며, 포지션 변경과 새로운 전술에도 유연하게 대응한다.",
+    "tags": [
+      "타격",
+      "출루와 연결",
+      "공격적인 주루",
+      "유망주 육성"
+    ],
+    "clubimage": "리그의 변화를 이끄는 젊고 유연한 구단. 입단 당시와 전혀 다른 선수로 성장하는 유망주가 많아, 선수의 가능성을 지켜보는 재미가 크다.",
+    "fandom": "젊은 팬층이 두텁고 굿즈와 유니폼의 패션성이 뛰어나다. 유망주의 성장 과정을 함께 응원하는 문화가 발달해 있다.",
+    "logo": "images/monarchs/logo.png",
+    "uniform": "images/monarchs/uniform.png",
+    "symbol": "images/monarchs/symbol.png",
+    "wordmark": "images/monarchs/wordmark.png",
+    "details": "images/monarchs/details.png",
+    "companyLogo": "images/monarchs/companyLogo.png",
+    "sponsorLogo": "images/monarchs/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "polaris",
+    "details": "images/polaris/details.png",
+    "uniform": "images/polaris/uniform.png",
+    "wordmark": "images/polaris/wordmark.png",
+    "symbol": "images/polaris/symbol.png",
+    "logo": "images/polaris/logo.png",
+    "ko": "부산 해성 폴라리스",
+    "en": "HAESUNG POLARIS",
+    "city": "BUSAN",
+    "color": "#263b67",
+    "icon": "⭐",
+    "year": "1982",
+    "home": "부산 센텀 폴라리스 돔",
+    "parent": "해성",
+    "sponsor": "언더아머",
+    "titles": "7회",
+    "pennants": "9회",
+    "postseason": "21회",
+    "motto": "별을 향해, 한 걸음 더.",
+    "identity": "북극성처럼 흔들리지 않는 목표를 향해 나아가는 부산의 전통 명문 구단. 단기적인 성과보다 장기적인 계획과 꾸준한 성장을 중시한다.",
+    "play": "강력한 선발진과 포수, 센터라인 수비를 중심으로 경기를 안정적으로 운영한다. 불필요한 작전을 줄이고 치밀한 경기 운영으로 상대를 압박한다.",
+    "tags": [
+      "선발 중심",
+      "포수 육성",
+      "센터라인 수비",
+      "경기 운영"
+    ],
+    "clubimage": "명확한 기준과 체계적인 운영으로 유명한 정규시즌의 강자. 프랜차이즈 선수들이 오랫동안 팀을 지키며, 실력뿐 아니라 책임감과 자기관리도 중요하게 평가받는다.",
+    "fandom": "부산 특유의 뜨거운 응원 문화를 자랑한다. 라이벌전의 열기가 특히 강하며, 오랫동안 팀을 지켜온 선수들에게 깊은 애정을 보인다.",
+    "companyLogo": "images/polaris/companyLogo.png",
+    "sponsorLogo": "images/polaris/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "falcons",
+    "ko": "대전 한월 팔콘스",
+    "en": "HANWOL FALCONS",
+    "city": "DAEJEON",
+    "color": "#71bce1",
+    "icon": "🦅",
+    "year": "1986",
+    "home": "대전 유성 스카이필드",
+    "parent": "한월",
+    "sponsor": "뉴발란스",
+    "titles": "5회",
+    "pennants": "6회",
+    "postseason": "17회",
+    "motto": "틀을 깨고 올라라.",
+    "identity": "정해진 틀에 얽매이지 않고 자유롭게 도전하는 구단. 실패를 두려워하기보다 새로운 가능성을 찾아 나서며, 젊은 선수들에게도 과감하게 기회를 부여한다.",
+    "play": "강력한 중심타선과 빠른 발을 활용하는 공격적인 야구가 특징이다. 장타와 도루를 동시에 노리며, 예상치 못한 작전으로 경기의 흐름을 뒤집는다.",
+    "tags": [
+      "장타",
+      "빠른 주루",
+      "외야 수비",
+      "과감한 작전"
+    ],
+    "clubimage": "청량하고 자유분방한 분위기의 공격 명문. 폭발적인 경기력을 보여주는 만큼 시즌별 기복도 있지만, 한 번 상승세를 타면 누구도 쉽게 막을 수 없다.",
+    "fandom": "대전에서 오랫동안 사랑받아 온 구단. 화끈한 공격을 즐기는 팬들이 많으며, 예측할 수 없는 경기력에 울고 웃는 일이 잦다.",
+    "logo": "images/falcons/logo.png",
+    "uniform": "images/falcons/uniform.png",
+    "details": "images/falcons/details.png",
+    "symbol": "images/falcons/symbol.png",
+    "wordmark": "images/falcons/wordmark.png",
+    "companyLogo": "images/falcons/companyLogo.png",
+    "sponsorLogo": "images/falcons/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "luminous",
+    "ko": "광주 서하 루미너스",
+    "en": "SEOHA LUMINOUS",
+    "city": "GWANGJU",
+    "color": "#9677c8",
+    "icon": "✨",
+    "year": "1982",
+    "home": "광주 루미너스 스타디움",
+    "parent": "서하",
+    "sponsor": "나이키",
+    "titles": "11회",
+    "pennants": "11회",
+    "postseason": "25회",
+    "motto": "Turn Impossible into Possible.",
+    "identity": "리그 최다 우승을 자랑하는 명문이자, 끝없는 도전을 상징하는 구단. 이미 이룬 영광에 안주하지 않고 아직 닿지 못한 희망을 향해 나아간다.",
+    "play": "강력한 중심타선과 스타 플레이어를 앞세워 승부한다. 풍부한 포스트시즌 경험과 뛰어난 클러치 능력으로 큰 경기에서 유난히 강한 모습을 보인다.",
+    "tags": [
+      "중심타선",
+      "스타 플레이어",
+      "클러치",
+      "가을야구 강자"
+    ],
+    "clubimage": "수많은 우승과 스타를 배출한 리그의 대표적인 왕조 구단. 정규시즌 성적과 관계없이 가을야구에 진출하면 가장 경계해야 할 상대다.",
+    "fandom": "지역 정체성과 자부심이 매우 강하다. 우승에 대한 기대치가 높으며, 팬들 사이에서는 “루미너스는 가을에 빛난다”라는 말이 유명하다.",
+    "logo": "images/luminous/logo.png",
+    "uniform": "images/luminous/uniform.png",
+    "details": "images/luminous/details.png",
+    "symbol": "images/luminous/symbol.png",
+    "wordmark": "images/luminous/wordmark.png",
+    "companyLogo": "images/luminous/companyLogo.png",
+    "sponsorLogo": "images/luminous/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "laurels",
+    "ko": "수원 SJ 로렐스",
+    "en": "SJ LAURELS",
+    "city": "SUWON",
+    "color": "#2c9787",
+    "icon": "🌿",
+    "year": "2000",
+    "home": "수원 SJ 로렐스 파크",
+    "parent": "설지",
+    "sponsor": null,
+    "titles": "2회",
+    "pennants": "3회",
+    "postseason": "12회",
+    "motto": "Rest. Recover. Rise Again.",
+    "identity": "잠시 멈추는 것을 실패로 여기지 않는 구단. 선수의 회복과 지속 가능한 성장을 중시하며, 충분히 쉬고 다시 일어서는 과정에도 가치를 둔다.",
+    "play": "강력한 불펜과 안정적인 수비를 바탕으로 실점을 최소화한다. 세밀한 투수 운용과 뛰어난 마무리 투수 육성으로 접전에서 강한 모습을 보인다.",
+    "tags": [
+      "불펜 중심",
+      "마무리 육성",
+      "안정적인 수비",
+      "저실점"
+    ],
+    "clubimage": "화려함보다 안정성과 지속성을 추구하는 구단. 체계적인 투수 육성 시스템으로 유명하며, 리그에서는 로렐스 출신 불펜 투수의 가치를 높게 평가한다.",
+    "fandom": "차분하지만 충성도가 높다. 화려한 스타보다 오랫동안 팀에 남아 묵묵히 제 역할을 해내는 선수를 좋아한다.",
+    "logo": "images/laurels/logo.png",
+    "uniform": "images/laurels/uniform.png",
+    "details": "images/laurels/details.png",
+    "symbol": "images/laurels/symbol.png",
+    "wordmark": "images/laurels/wordmark.png",
+    "companyLogo": "images/laurels/companyLogo.png",
+    "sponsorLogo": "images/laurels/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "orbitz",
+    "ko": "대구 환일 오르비츠",
+    "en": "HWANIL ORBITZ",
+    "city": "DAEGU",
+    "color": "#e58b36",
+    "icon": "🪐",
+    "year": "1982",
+    "home": "대구 수성 오르빗 파크",
+    "parent": "환일",
+    "sponsor": null,
+    "titles": "6회",
+    "pennants": "5회",
+    "postseason": "20회",
+    "motto": "꿈을, 현실의 궤도로.",
+    "identity": "꿈을 막연한 희망으로 남겨두지 않고 현실로 만드는 구단. 데이터와 기술을 활용해 선수의 가능성을 발견하고, 각자가 자신만의 궤도를 찾도록 돕는다.",
+    "play": "홈런과 장타력을 앞세운 공격적인 야구를 펼친다. 타구 속도, 발사각, 투구 회전수 등 다양한 데이터를 분석하며 새로운 기술과 전술을 적극적으로 도입한다.",
+    "tags": [
+      "홈런",
+      "장타력",
+      "데이터 분석",
+      "첨단 기술"
+    ],
+    "clubimage": "리그에서 가장 미래지향적인 구단. 첨단 분석 시스템과 젊은 선수 중심의 운영으로 유명하며, 구장과 유니폼에도 SF적인 감각이 드러난다.",
+    "fandom": "젊은 팬층이 많고 SNS 활동이 활발하다. 선수별 기록과 데이터 분석 콘텐츠가 특히 인기를 끈다.",
+    "logo": "images/orbitz/logo.png",
+    "uniform": "images/orbitz/uniform.png",
+    "details": "images/orbitz/details.png",
+    "symbol": "images/orbitz/symbol.png",
+    "wordmark": "images/orbitz/wordmark.png",
+    "companyLogo": "images/orbitz/companyLogo.png",
+    "sponsorLogo": "images/orbitz/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "waves",
+    "ko": "창원 청문 웨이브스",
+    "en": "CHEONGMUN WAVES",
+    "city": "CHANGWON",
+    "color": "#66bdb2",
+    "icon": "🌊",
+    "year": "2011",
+    "home": "창원 마산 웨이브스 베이",
+    "parent": "청문",
+    "sponsor": null,
+    "titles": "1회",
+    "pennants": "2회",
+    "postseason": "7회",
+    "motto": "Together, One Wave.",
+    "identity": "선수와 팬, 지역사회가 함께 만들어가는 야구를 추구하는 따뜻한 구단. 서로 다른 플레이가 하나의 물결처럼 이어질 때 가장 큰 힘을 발휘한다고 믿는다.",
+    "play": "리그 정상급 주루 능력과 적극적인 작전 야구가 강점이다. 여러 포지션을 소화하는 선수들을 유연하게 활용하며, 출루와 진루를 연결해 득점을 만든다.",
+    "tags": [
+      "주루",
+      "작전 야구",
+      "멀티 포지션",
+      "유연한 전술"
+    ],
+    "clubimage": "특정 스타에게 의존하기보다 선수단 전체의 조화를 중시하는 구단. 상황에 따라 끊임없이 변화하는 유기적인 야구로 유명하다.",
+    "fandom": "밝고 활기찬 응원 문화가 특징이다. 홈구장은 축제 같은 분위기로 유명하며, 선수와 팬 사이의 유대감도 강하다.",
+    "logo": "images/waves/logo.png",
+    "uniform": "images/waves/uniform.png",
+    "details": "images/waves/details.png",
+    "symbol": "images/waves/symbol.png",
+    "wordmark": "images/waves/wordmark.png",
+    "companyLogo": "images/waves/companyLogo.png",
+    "sponsorLogo": "images/waves/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "reverse",
+    "ko": "강릉 휘경 리버스",
+    "en": "HUIKYUNG REVERSE",
+    "city": "GANGNEUNG",
+    "color": "#657d90",
+    "icon": "🔥",
+    "year": "2013",
+    "home": "강릉 정동진 피닉스 아레나",
+    "parent": "휘경",
+    "sponsor": null,
+    "titles": "2회",
+    "pennants": "1회",
+    "postseason": "8회",
+    "motto": "빛을 향해 끝까지.",
+    "identity": "몇 번이고 다시 일어나는 불사조처럼 끝까지 포기하지 않는 구단. 실패와 부진 속에서도 의지를 잃지 않으며, 마지막 순간까지 역전의 가능성을 믿는다.",
+    "play": "시즌 초반보다 후반기에 강한 독특한 팀 컬러를 지녔다. 경험 많은 선발진과 뛰어난 클러치 능력을 바탕으로 경기 후반 역전승을 자주 만들어낸다.",
+    "tags": [
+      "후반기 강세",
+      "역전승",
+      "베테랑 선발",
+      "클러치"
+    ],
+    "clubimage": "시즌 중반까지 부진하더라도 가을이 가까워지면 무섭게 살아나는 팀. 정규시즌 1위가 아니어도 한국시리즈 정상에 오를 수 있는 반전의 강자다.",
+    "fandom": "인내심과 끈기로 유명하다. 시즌 초반 성적이 좋지 않아도 “아직 9월이 아니다”라며 끝까지 팀을 믿는다.",
+    "logo": "images/reverse/logo.png",
+    "uniform": "images/reverse/uniform.png",
+    "details": "images/reverse/details.png",
+    "symbol": "images/reverse/symbol.png",
+    "wordmark": "images/reverse/wordmark.png",
+    "companyLogo": "images/reverse/companyLogo.png",
+    "sponsorLogo": "images/reverse/sponsorLogo.png",
+    "markingFont": ""
+  },
+  {
+    "id": "petals",
+    "ko": "인천 수윤 페탈스",
+    "en": "SUYUN PETALS",
+    "city": "INCHEON",
+    "color": "#e68e8b",
+    "icon": "🌸",
+    "year": "2008",
+    "home": "인천 송도 페탈스 가든",
+    "parent": "수윤",
+    "sponsor": null,
+    "titles": "0회",
+    "pennants": "4회",
+    "postseason": "14회",
+    "motto": "우리라는 이름으로 만개하다.",
+    "identity": "한국시리즈에 12번 진출하고도 아직 우승하지 못한 비운의 구단. 그러나 실패를 끝으로 여기지 않으며, 서로 다른 꽃잎이 모여 하나의 꽃을 완성하듯 함께 첫 우승을 꿈꾼다.",
+    "play": "정확한 컨택과 높은 출루율, 안정적인 수비를 중시한다. 자체 육성을 통해 정교한 타자를 길러내며, 화려한 홈런보다 작은 기회를 확실하게 살리는 야구를 펼친다.",
+    "tags": [
+      "정교한 타격",
+      "출루율",
+      "자체 육성",
+      "작전 수행"
+    ],
+    "clubimage": "리그를 대표하는 비운의 준우승 전문 구단. 뛰어난 선수들을 꾸준히 배출하지만 마지막 문턱을 넘지 못해, 첫 우승을 향한 서사가 누구보다 깊다.",
+    "fandom": "10개 구단 중 첫 우승에 대한 열망이 가장 간절하다. 수많은 준우승에도 팀을 떠나지 않은 팬들에게 첫 우승은 오랜 기다림의 결실이 될 것이다.",
+    "logo": "images/petals/logo.png",
+    "uniform": "images/petals/uniform.png",
+    "details": "images/petals/details.png",
+    "symbol": "images/petals/symbol.png",
+    "wordmark": "images/petals/wordmark.png",
+    "companyLogo": "images/petals/companyLogo.png",
+    "sponsorLogo": "images/petals/sponsorLogo.png",
+    "markingFont": ""
+  }
+];
+const $=id=>document.getElementById(id);let current=0;
+const safe=s=>String(s??'정보 확인 필요').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function downloadClubAsset(field){
+ const club=CLUBS[current],src=club[field];if(!src)return;
+ const a=document.createElement('a');a.href=src;a.download=club.id+'-'+field+'.png';document.body.appendChild(a);a.click();a.remove();
+}
+function assetDownload(field){return CLUBS[current][field]?`<button type="button" class="asset-download" onclick="downloadClubAsset('${field}')">↓ 원본 PNG 다운로드</button>`:''}
+function media(src,label,icon,field){return src?`<figure><img src="${safe(src)}" alt="${safe(label)}" loading="lazy" decoding="async" onerror="this.parentElement.innerHTML='<div class=&quot;placeholder&quot;>이미지 파일을 확인해 주세요</div>'"><figcaption>${safe(label)}</figcaption></figure>`:`<figure><div class="placeholder"><span>${icon}</span>${safe(label)}<br>이미지 준비 중</div><figcaption>${safe(label)}</figcaption></figure>`}
+
+const ASSET_GROUPS=[
+  {title:'MAIN LOGO',sub:'구단 기본 로고',fields:[['logo','기본 로고']]},
+  {title:'SYMBOL & WORDMARK',sub:'구단 심볼 · 워드마크',fields:[['symbol','심볼 마크'],['wordmark','워드마크']]},
+  {title:'CLUB PARTNERS',sub:'모기업 · 키트 스폰서',fields:[['companyLogo','모기업 로고'],['sponsorLogo','키트 스폰서 로고']]}
+];
+function downloadCenter(c){
+ const groups=ASSET_GROUPS.map(g=>{
+  const files=g.fields.filter(([f])=>!!c[f]);
+  if(!files.length)return '';
+  return `<div class="dc-group"><div class="dc-group-heading"><strong>${g.title}</strong><span>${g.sub}</span></div><div class="dc-links">${files.map(([f,label])=>`<button type="button" onclick="downloadClubAsset('${f}')"><span>${label}</span><span>↓ PNG</span></button>`).join('')}</div></div>`;
+ }).filter(Boolean);
+ if(!groups.length)return '';
+ const number='08';
+ return `<section class="section dc-section"><div class="section-head">${number} / DOWNLOAD CENTER</div><div class="dc-title">CLUB ASSETS</div><p class="dc-subtitle">${safe(c.en)} · ORIGINAL DESIGN RESOURCES</p><div class="dc-list">${groups.join('')}</div><button type="button" class="dc-all" onclick="downloadAllClubAssets()">↓ &nbsp; DOWNLOAD ALL ASSETS <small>원본 이미지 ZIP</small></button></section>`;
+}
+function assetBytes(src){
+ const m=src.match(/^data:([^;,]+);base64,(.*)$/s);
+ if(!m)return null;
+ const raw=atob(m[2]),bytes=new Uint8Array(raw.length);
+ for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);
+ return bytes;
+}
+const ZIP_CRC_TABLE=(()=>{const t=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=(c&1)?(0xedb88320^(c>>>1)):(c>>>1);t[n]=c>>>0;}return t})();
+function zipCRC(bytes){let c=0xffffffff;for(const b of bytes)c=ZIP_CRC_TABLE[(c^b)&255]^(c>>>8);return(c^0xffffffff)>>>0;}
+function makeClubZip(files){
+ const enc=new TextEncoder(),parts=[],central=[];let offset=0;
+ const u16=(view,p,v)=>view.setUint16(p,v,true),u32=(view,p,v)=>view.setUint32(p,v>>>0,true);
+ for(const [name,data] of files){
+  const fn=enc.encode(name),crc=zipCRC(data),lh=new Uint8Array(30+fn.length),lv=new DataView(lh.buffer);
+  u32(lv,0,0x04034b50);u16(lv,4,20);u16(lv,6,0x0800);u32(lv,14,crc);u32(lv,18,data.length);u32(lv,22,data.length);u16(lv,26,fn.length);lh.set(fn,30);
+  parts.push(lh,data);
+  const ch=new Uint8Array(46+fn.length),cv=new DataView(ch.buffer);
+  u32(cv,0,0x02014b50);u16(cv,4,20);u16(cv,6,20);u16(cv,8,0x0800);u32(cv,16,crc);u32(cv,20,data.length);u32(cv,24,data.length);u16(cv,28,fn.length);u32(cv,42,offset);ch.set(fn,46);central.push(ch);
+  offset+=lh.length+data.length;
+ }
+ const centralSize=central.reduce((n,p)=>n+p.length,0),end=new Uint8Array(22),v=new DataView(end.buffer);
+ u32(v,0,0x06054b50);u16(v,8,files.length);u16(v,10,files.length);u32(v,12,centralSize);u32(v,16,offset);
+ return new Blob([...parts,...central,end],{type:'application/zip'});
+}
+async function downloadAllClubAssets(){
+ const c=CLUBS[current],fields=['logo','symbol','wordmark','companyLogo','sponsorLogo'];
+ if(location.protocol==='file:'){
+   alert('전체 ZIP 다운로드는 웹사이트에 업로드한 후 사용할 수 있어요. 로컬에서는 이미지 파일을 images 폴더에서 직접 확인해 주세요.');return;
+ }
+ const files=[];
+ for(const f of fields){
+  try{const r=await fetch(c[f]);if(!r.ok)continue;files.push([c.id+'-'+f+'.png',new Uint8Array(await r.arrayBuffer())]);}catch(e){}
+ }
+ if(!files.length){alert('다운로드할 이미지 파일을 찾지 못했어요.');return;}
+ const url=URL.createObjectURL(makeClubZip(files)),a=document.createElement('a');
+ a.href=url;a.download=c.id+'-original-assets.zip';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+}
+
+function render(){const c=CLUBS[current];document.documentElement.style.setProperty('--team',c.color);$('selector').innerHTML=CLUBS.map((t,i)=>`<button type="button" class="${i===current?'active':''}" aria-pressed="${i===current}" data-index="${i}">${safe(t.ko.split(' ')[1])}</button>`).join('');$('selector').querySelectorAll('button').forEach(b=>b.onclick=()=>go(+b.dataset.index));const logo=c.logo?`<img class="logo wolves-main-logo" src="${safe(c.logo)}" alt="${safe(c.ko)} 공식 로고" onerror="this.style.opacity='.08';this.title='이미지를 폴더에 넣어주세요'">`:`<div class="logo-empty"><span>${c.icon}</span>공식 로고 삽입 예정</div>`;
+$('sheet').innerHTML=`<div class="mast"><div class="mast-top"><span>CLUB PROFILE / ${String(current+1).padStart(2,'0')}</span><span>${safe(c.city)} · EST. ${safe(c.year)}</span></div><div class="mast-grid"><div><div class="ko">${safe(c.ko)}</div><h2>${safe(c.en)}</h2><p class="motto${/[가-힣]/.test(c.motto)?' ko-slogan':''}">${safe(c.motto)}</p></div>${logo}</div></div><div class="content"><div class="stats"><div class="stat"><b>${safe(c.titles)}</b><span>한국시리즈 우승</span></div><div class="stat"><b>${safe(c.pennants)}</b><span>페넌트레이스 우승</span></div><div class="stat"><b>${safe(c.postseason)}</b><span>포스트시즌 진출</span></div></div><section class="section"><div class="section-head">01 / CLUB IDENTITY</div><p class="body-copy">${safe(c.identity)}</p></section><section class="section"><div class="section-head">02 / PLAY STYLE</div><p class="body-copy">${safe(c.play)}</p><div class="chips">${c.tags.map(t=>`<span class="chip">#${safe(t)}</span>`).join('')}</div></section><section class="section"><div class="section-head">03 / CLUB IMAGE & FANDOM</div><div class="two"><div class="feature"><strong>CLUB IMAGE</strong><p>${safe(c.clubimage)}</p></div><div class="feature"><strong>FANDOM</strong><p>${safe(c.fandom)}</p></div></div></section><section class="section"><div class="section-head">04 / CLUB INFORMATION</div><table class="info"><tbody>${[['창단',c.year+'년'],['연고지',c.ko.split(' ')[0]],['홈구장',c.home],['모기업',c.parent],['키트 스폰서',c.sponsor]].filter(([k,v])=>v).map(([k,v])=>`<tr><th>${safe(k)}</th><td>${safe(v)}</td></tr>`).join('')}</tbody></table></section>${`<section class="section"><div class="section-head">05 / CLUB PARTNERS</div><div class="partners-grid"><div class="partner-tile"><span class="partner-kicker">PARENT COMPANY</span><div class="partner-image"><img src="${safe(c.companyLogo)}" alt="${safe(c.parent)} 기업 로고" onerror="this.style.visibility='hidden'"></div><span class="partner-name">${safe(c.parent)}</span></div><div class="partner-tile"><span class="partner-kicker">KIT SUPPLIER</span><div class="partner-image"><img src="${safe(c.sponsorLogo)}" alt="${safe(c.sponsor)} 키트 스폰서 로고" onerror="this.style.visibility='hidden'"></div><span class="partner-name">${safe(c.sponsor)}</span></div></div></section>`}${`<section class="section"><div class="section-head">06 / CLUB MARKS</div><div class="media wolves-marks marks-${c.id}">${media(c.symbol,'심볼 마크','🐺','symbol')}${media(c.wordmark,'워드마크','⚾','wordmark')}</div></section>`}<section class="section"><div class="section-head">07 / UNIFORM & DETAILS</div><div class="media wolves-uniforms">${media(c.uniform,'홈 · 원정 유니폼','👕')}${media(c.details,'모자 · 유니폼 디테일','⚾')}</div>${c.markingFont?`<div class="marking-font"><span class="marking-font-label">UNIFORM MARKING FONT</span><strong>${safe(c.markingFont)}</strong></div>`:''}</section>${downloadCenter(c)}</div><div class="footer"><span>BEYOND THE NINTH</span><span>${String(current+1).padStart(2,'0')} / ${CLUBS.length}</span></div>`;
+$('prev').disabled=current===0;$('next').disabled=current===CLUBS.length-1;try{history.replaceState(null,'','#'+c.id)}catch(e){}
+}
+function go(i){if(i<0||i>=CLUBS.length)return;current=i;render();window.scrollTo({top:0,behavior:'smooth'})}
+$('prev').onclick=()=>go(current-1);$('next').onclick=()=>go(current+1);const hash=location.hash.slice(1);const found=CLUBS.findIndex(c=>c.id===hash);if(found>=0)current=found;render();window.addEventListener('hashchange',()=>{const i=CLUBS.findIndex(c=>c.id===location.hash.slice(1));if(i>=0&&i!==current){current=i;render()}});
+</script></body></html>
