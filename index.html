@@ -64,6 +64,18 @@
 .marking-font strong{font-size:12px;color:#333;font-weight:700;text-align:right}
 /* Template image slots: original PNGs are stored separately */
 .partner-image img{object-fit:contain}
+
+/* Team-specific contrast enhancements. Original image files remain untouched. */
+.logo-polaris,.logo-orbitz,.logo-petals{
+ filter:drop-shadow(0 0 7px rgba(255,255,255,.9)) drop-shadow(0 0 19px rgba(255,255,255,.62)) drop-shadow(0 0 32px rgba(255,255,255,.30));
+}
+/* Shadow follows transparent artwork contours, not the image rectangle. */
+.wolves-marks.marks-falcons figure:nth-child(1) img,
+.wolves-marks.marks-falcons figure:nth-child(2) img,
+.wolves-marks.marks-petals figure:nth-child(1) img{
+ background:transparent;
+ filter:drop-shadow(1px 3px 2px rgba(20,28,35,.55)) drop-shadow(0 0 1px rgba(20,28,35,.38));
+}
 </style></head><body><header class="top"><div class="brand">BEYOND THE NINTH</div><small>THE OFFICIAL CLUB GUIDE</small></header><main class="shell"><div class="intro"><div class="eyebrow">2026 · FICTIONAL BASEBALL LEAGUE</div><h1>열 개의 구단, 열 개의 이야기.</h1><p>열 개의 구단이 써 내려가는 하나의 리그. 각자의 방식으로 승리를 만들어가는 팀들을 만나보세요.</p></div><nav class="selector" id="selector" aria-label="구단 선택"></nav><article class="sheet" id="sheet" aria-live="polite"></article><div class="nav-bottom"><button id="prev">← 이전 구단</button><button id="next">다음 구단 →</button></div><p class="note">※ 가상의 야구 리그를 배경으로 한 창작 합작 가이드입니다. 천랑 울브스·세연 모나크스·해성 폴라리스의 원본 이미지는 파일에 포함되어 있습니다. 다른 구단 이미지는 추후 추가됩니다.</p></main><script>
 /* ─────────────────────────────────────────────────────────
   편집 방법
@@ -140,7 +152,7 @@ const CLUBS=[
     "details": "images/monarchs/details.png",
     "companyLogo": "images/monarchs/companyLogo.png",
     "sponsorLogo": "images/monarchs/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "더 우아한 세리프"
   },
   {
     "id": "polaris",
@@ -174,7 +186,7 @@ const CLUBS=[
     "fandom": "부산 특유의 뜨거운 응원 문화를 자랑한다. 라이벌전의 열기가 특히 강하며, 오랫동안 팀을 지켜온 선수들에게 깊은 애정을 보인다.",
     "companyLogo": "images/polaris/companyLogo.png",
     "sponsorLogo": "images/polaris/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "네오현대 EBK"
   },
   {
     "id": "falcons",
@@ -208,7 +220,7 @@ const CLUBS=[
     "wordmark": "images/falcons/wordmark.png",
     "companyLogo": "images/falcons/companyLogo.png",
     "sponsorLogo": "images/falcons/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "학교안심 알림장"
   },
   {
     "id": "luminous",
@@ -242,7 +254,7 @@ const CLUBS=[
     "wordmark": "images/luminous/wordmark.png",
     "companyLogo": "images/luminous/companyLogo.png",
     "sponsorLogo": "images/luminous/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "KBL 코트체"
   },
   {
     "id": "laurels",
@@ -276,7 +288,7 @@ const CLUBS=[
     "wordmark": "images/laurels/wordmark.png",
     "companyLogo": "images/laurels/companyLogo.png",
     "sponsorLogo": "images/laurels/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "자이언츠(Inline)"
   },
   {
     "id": "orbitz",
@@ -310,7 +322,7 @@ const CLUBS=[
     "wordmark": "images/orbitz/wordmark.png",
     "companyLogo": "images/orbitz/companyLogo.png",
     "sponsorLogo": "images/orbitz/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "비트로 코어 Heavy"
   },
   {
     "id": "waves",
@@ -344,7 +356,7 @@ const CLUBS=[
     "wordmark": "images/waves/wordmark.png",
     "companyLogo": "images/waves/companyLogo.png",
     "sponsorLogo": "images/waves/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "KBO 다이아고딕"
   },
   {
     "id": "reverse",
@@ -378,7 +390,7 @@ const CLUBS=[
     "wordmark": "images/reverse/wordmark.png",
     "companyLogo": "images/reverse/companyLogo.png",
     "sponsorLogo": "images/reverse/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "조선로고체"
   },
   {
     "id": "petals",
@@ -412,7 +424,7 @@ const CLUBS=[
     "wordmark": "images/petals/wordmark.png",
     "companyLogo": "images/petals/companyLogo.png",
     "sponsorLogo": "images/petals/sponsorLogo.png",
-    "markingFont": ""
+    "markingFont": "조선견고딕"
   }
 ];
 const $=id=>document.getElementById(id);let current=0;
@@ -477,7 +489,7 @@ async function downloadAllClubAssets(){
  a.href=url;a.download=c.id+'-original-assets.zip';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
 }
 
-function render(){const c=CLUBS[current];document.documentElement.style.setProperty('--team',c.color);$('selector').innerHTML=CLUBS.map((t,i)=>`<button type="button" class="${i===current?'active':''}" aria-pressed="${i===current}" data-index="${i}">${safe(t.ko.split(' ')[1])}</button>`).join('');$('selector').querySelectorAll('button').forEach(b=>b.onclick=()=>go(+b.dataset.index));const logo=c.logo?`<img class="logo wolves-main-logo" src="${safe(c.logo)}" alt="${safe(c.ko)} 공식 로고" onerror="this.style.opacity='.08';this.title='이미지를 폴더에 넣어주세요'">`:`<div class="logo-empty"><span>${c.icon}</span>공식 로고 삽입 예정</div>`;
+function render(){const c=CLUBS[current];document.documentElement.style.setProperty('--team',c.color);$('selector').innerHTML=CLUBS.map((t,i)=>`<button type="button" class="${i===current?'active':''}" aria-pressed="${i===current}" data-index="${i}">${safe(t.ko.split(' ')[1])}</button>`).join('');$('selector').querySelectorAll('button').forEach(b=>b.onclick=()=>go(+b.dataset.index));const logo=c.logo?`<img class="logo wolves-main-logo logo-${c.id}" src="${safe(c.logo)}" alt="${safe(c.ko)} 공식 로고" onerror="this.style.opacity='.08';this.title='이미지를 폴더에 넣어주세요'">`:`<div class="logo-empty"><span>${c.icon}</span>공식 로고 삽입 예정</div>`;
 $('sheet').innerHTML=`<div class="mast"><div class="mast-top"><span>CLUB PROFILE / ${String(current+1).padStart(2,'0')}</span><span>${safe(c.city)} · EST. ${safe(c.year)}</span></div><div class="mast-grid"><div><div class="ko">${safe(c.ko)}</div><h2>${safe(c.en)}</h2><p class="motto${/[가-힣]/.test(c.motto)?' ko-slogan':''}">${safe(c.motto)}</p></div>${logo}</div></div><div class="content"><div class="stats"><div class="stat"><b>${safe(c.titles)}</b><span>한국시리즈 우승</span></div><div class="stat"><b>${safe(c.pennants)}</b><span>페넌트레이스 우승</span></div><div class="stat"><b>${safe(c.postseason)}</b><span>포스트시즌 진출</span></div></div><section class="section"><div class="section-head">01 / CLUB IDENTITY</div><p class="body-copy">${safe(c.identity)}</p></section><section class="section"><div class="section-head">02 / PLAY STYLE</div><p class="body-copy">${safe(c.play)}</p><div class="chips">${c.tags.map(t=>`<span class="chip">#${safe(t)}</span>`).join('')}</div></section><section class="section"><div class="section-head">03 / CLUB IMAGE & FANDOM</div><div class="two"><div class="feature"><strong>CLUB IMAGE</strong><p>${safe(c.clubimage)}</p></div><div class="feature"><strong>FANDOM</strong><p>${safe(c.fandom)}</p></div></div></section><section class="section"><div class="section-head">04 / CLUB INFORMATION</div><table class="info"><tbody>${[['창단',c.year+'년'],['연고지',c.ko.split(' ')[0]],['홈구장',c.home],['모기업',c.parent],['키트 스폰서',c.sponsor]].filter(([k,v])=>v).map(([k,v])=>`<tr><th>${safe(k)}</th><td>${safe(v)}</td></tr>`).join('')}</tbody></table></section>${`<section class="section"><div class="section-head">05 / CLUB PARTNERS</div><div class="partners-grid"><div class="partner-tile"><span class="partner-kicker">PARENT COMPANY</span><div class="partner-image"><img src="${safe(c.companyLogo)}" alt="${safe(c.parent)} 기업 로고" onerror="this.style.visibility='hidden'"></div><span class="partner-name">${safe(c.parent)}</span></div><div class="partner-tile"><span class="partner-kicker">KIT SUPPLIER</span><div class="partner-image"><img src="${safe(c.sponsorLogo)}" alt="${safe(c.sponsor)} 키트 스폰서 로고" onerror="this.style.visibility='hidden'"></div><span class="partner-name">${safe(c.sponsor)}</span></div></div></section>`}${`<section class="section"><div class="section-head">06 / CLUB MARKS</div><div class="media wolves-marks marks-${c.id}">${media(c.symbol,'심볼 마크','🐺','symbol')}${media(c.wordmark,'워드마크','⚾','wordmark')}</div></section>`}<section class="section"><div class="section-head">07 / UNIFORM & DETAILS</div><div class="media wolves-uniforms">${media(c.uniform,'홈 · 원정 유니폼','👕')}${media(c.details,'모자 · 유니폼 디테일','⚾')}</div>${c.markingFont?`<div class="marking-font"><span class="marking-font-label">UNIFORM MARKING FONT</span><strong>${safe(c.markingFont)}</strong></div>`:''}</section>${downloadCenter(c)}</div><div class="footer"><span>BEYOND THE NINTH</span><span>${String(current+1).padStart(2,'0')} / ${CLUBS.length}</span></div>`;
 $('prev').disabled=current===0;$('next').disabled=current===CLUBS.length-1;try{history.replaceState(null,'','#'+c.id)}catch(e){}
 }
